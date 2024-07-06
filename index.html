@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA CLASSES</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <style>
+        @keyframes rainbow {
+            0% {
+                color: #FF0000;
+                /* Red */
+            }
+
+            14% {
+                color: #FF7F00;
+                /* Orange */
+            }
+
+            28% {
+                color: #FFFF00;
+                /* Yellow */
+            }
+
+            42% {
+                color: #00FF00;
+                /* Green */
+            }
+
+            57% {
+                color: #0000FF;
+                /* Blue */
+            }
+
+            71% {
+                color: #4B0082;
+                /* Indigo */
+            }
+
+            85% {
+                color: #9400D3;
+                /* Violet */
+            }
+
+            100% {
+                color: #FF0000;
+                /* Red */
+            }
+        }
+
+        .animated-text {
+            animation: rainbow 5s linear infinite;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-900 text-white" id="Home">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold">ALPHA CLASSES</a>
+            <div class="relative inline-block text-left">
+                <button id="dropdownButton" class="bg-gray-800 text-white px-4 py-2 rounded-lg">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+                <div id="dropdownMenu"
+                    class="hidden absolute z-10 top-full left-0 mt-2 w-32 bg-gray-800 rounded-lg shadow-lg">
+                    <ul class="py-2">
+                        <li class="px-4 py-2 hover:bg-gray-700"><a href="#Home">Home</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-700"><a
+                                href="https://portfolio-abhay-pratap-chaurasiya.netlify.app/" target="_blank">About</a>
+                        </li>
+                        <li class="px-4 py-2 hover:bg-gray-700"><a href="#Contacts">Contacts</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-700"><a href="https://github.com/Abhay62972"
+                                target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                const dropdownButton = document.getElementById('dropdownButton');
+                const dropdownMenu = document.getElementById('dropdownMenu');
+
+                dropdownButton.addEventListener('click', () => {
+                    dropdownMenu.classList.toggle('hidden');
+                });
+            </script>
+        </div>
+    </nav>
+
+    <!-- Logo and Title -->
+    <div class="flex flex-col items-center justify-center">
+        <!-- Upper Div -->
+        <div class="p-10 ">
+            <img src="LOGO.jpg" alt="Logo" class="max-w-full border border-gray-300 border-2 rounded-lg">
+        </div>
+
+        <!-- Lower Div -->
+        <div class=" p-10">
+            <h1 class="text-7xl font-semibold animated-text">
+                <span id="element"></span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Body with Containers as Buttons -->
+    <div class="container mx-auto mt-15 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <a href="Classnine.html" class="bg-gray-800 p-10 rounded-lg shadow-lg text-center m-5">
+            Class 9th
+        </a>
+
+        <a href="Classten.html" class="bg-gray-800 p-10 rounded-lg shadow-lg text-center m-5">
+            Class 10th
+        </a>
+
+        <!-- <a href="Classeleven.html" class="bg-gray-800 p-10 rounded-lg shadow-lg text-center m-5">
+           Class 11th
+        </a>
+
+        <a href="Classtwelve.html" class="bg-gray-800 p-10 rounded-lg shadow-lg text-center m-5">
+            Class 12th
+        </a> -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-8 mt-10">
+        <div class="container mx-auto">
+            <div class="mb-4">
+                <a href="https://www.facebook.com/ChaurasiyaAbhayPratap/" target="_blank"
+                    class="text-white mx-3">Facebook</a>
+                <a href="https://www.linkedin.com/in/abhay-pratap-chaurasiya-675986287/"
+                    target="_blank" class="text-white mx-3">LinkedIn</a>
+                <a href="https://youtube.com/@Abhay_Pratap_Chaurasiya" target="_blank"
+                    class="text-white mx-3">YouTube</a>
+            </div>
+            <p class="text-gray-500" id="Contacts">Contact us at: abhay629725426@gmail.com</p>
+            <p class="text-gray-500">&copy; Stydy With Abhay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for title -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ALPHA CLASSES', 'Keep Learning', 'Keep Growing'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

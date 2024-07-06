@@ -1,0 +1,45 @@
+@keyframes rainbow {
+    0% {
+        color: #FF0000;
+        /* Red */
+    }
+
+    14% {
+        color: #FF7F00;
+        /* Orange */
+    }
+
+    28% {
+        color: #FFFF00;
+        /* Yellow */
+    }
+
+    42% {
+        color: #00FF00;
+        /* Green */
+    }
+
+    57% {
+        color: #0000FF;
+        /* Blue */
+    }
+
+    71% {
+        color: #4B0082;
+        /* Indigo */
+    }
+
+    85% {
+        color: #9400D3;
+        /* Violet */
+    }
+
+    100% {
+        color: #FF0000;
+        /* Red */
+    }
+}
+
+.animated-text {
+    animation: rainbow 5s linear infinite;
+}

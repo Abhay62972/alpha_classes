@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10th</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white" id="Home">
+    <nav class="bg-gray-800 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold">ALPHA CLASSES</a>
+            <div class="relative inline-block text-left">
+                <button id="dropdownButton" class="bg-gray-800 text-white px-4 py-2 rounded-lg">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+                <div id="dropdownMenu"
+                    class="hidden absolute z-10 top-full left-0 mt-2 w-32 bg-gray-800 rounded-lg shadow-lg">
+                    <ul class="py-2">
+                        <li class="px-4 py-2 hover:bg-gray-700"><a href="Index.html">Home</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-700"><a
+                                href="https://portfolio-abhay-pratap-chaurasiya.netlify.app/" target="_blank">About</a>
+                        </li>
+                        <li class="px-4 py-2 hover:bg-gray-700"><a href="#Contacts">Contacts</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-700"><a href="https://github.com/Abhay62972"
+                                target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                const dropdownButton = document.getElementById('dropdownButton');
+                const dropdownMenu = document.getElementById('dropdownMenu');
+
+                dropdownButton.addEventListener('click', () => {
+                    dropdownMenu.classList.toggle('hidden');
+                });
+            </script>
+        </div>
+    </nav>
+
+    <div class=" p-10">
+        <h1 class="text-5xl font-semibold animated-text">
+            <span id="element"> CLASS 10th</span>
+        </h1>
+    </div>
+
+    <!-- Displaying subject names with 6 chapters each -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+        <!-- Subject 1 -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+            <h2 class="text-lg font-semibold mb-2">PHYSICS</h2>
+            <ul>
+                <a href="">
+                    <li>Chapter 1 (Light Reflection and Refraction)</li>
+                </a>
+                <a href="">
+                    <li>Chapter 2 (The Human Eye and Colorful World)</li>
+                </a>
+                <a href="">
+                    <li>Chapter 3 (Electricity)</li>
+                </a>
+                <a href="">
+                    <li>Chapter 4 (Magnetic Effects of Electric Current)</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Displaying subject names with 6 chapters each -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+            <!-- Subject 1 -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                <h2 class="text-lg font-semibold mb-2">CHEMISTRY</h2>
+                <ul>
+                    <a href="">
+                        <li>Chapter 1 (Chemical Reactions and Equations)</li>
+                    </a>
+                    <a href="">
+                        <li>Chapter 2 (Acids, Bases and Salts)</li>
+                    </a>
+                    <a href="">
+                        <li>Chapter 3 (Metals and Non-metals)</li>
+                    </a>
+                    <a href="">
+                        <li>Chapter 4 (Carbon and its Compounds)</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!-- Displaying subject names with 6 chapters each -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                <!-- Subject 1 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                    <h2 class="text-lg font-semibold mb-2">BIOLOGY</h2>
+                    <ul>
+                        <a href="">
+                            <li>Chapter 1 (Life Processes)</li>
+                        </a>
+                        <a href="">
+                            <li>Chapter 2 (Control and Coordination)</li>
+                        </a>
+                        <a href="">
+                            <li>Chapter 3 (How do Organisms Reproduce)</li>
+                        </a>
+                        <a href="">
+                            <li>Chapter 4 (Heredity And Evolution)</li>
+                        </a>
+                        <a href="">
+                            <li>Chapter 5 (Our Environment)</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Displaying subject names with 6 chapters each -->
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                    <!-- Subject 1 -->
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                        <h2 class="text-lg font-semibold mb-2">MATHEMATICS</h2>
+                        <ul>
+                            <a href="">
+                                <li>Chapter 1 (Real Numbers)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 2 (Polynomials)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 3 (Pair of Linear Equations in Two Variables)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 4 (Quadratic Equations)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 5 (Arithmetic Progressions)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 6 (Triangles)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 7 (Coordinate Geometry)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 8 (Introduction to Trigonometry)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 9 (Some Applications of Trigonometry)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 10 (Circles)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 11 (Areas Related to Circles)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 12 (Surface Areas and Volumes)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 13 (Statistics)</li>
+                            </a>
+                            <a href="">
+                                <li>Chapter 14 (Probability)</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!-- Displaying subject names with 6 chapters each -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                        <!-- Subject 1 -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                            <h2 class="text-lg font-semibold mb-2">HISTORY</h2>
+                            <ul>
+                                <a href="">
+                                    <li>Chapter 1 (The Rise of Nationalism in Europe)</li>
+                                </a>
+                                <a href="">
+                                    <li>Chapter 2 (Nationalism in India)</li>
+                                </a>
+                                <a href="">
+                                    <li>Chapter 3 (The Making of a Global World)</li>
+                                </a>
+                                <a href="">
+                                    <li>Chapter 4 (The Age of Industrialisation)</li>
+                                </a>
+                                <a href="">
+                                    <li>Chapter 5 (Print Culture and Modern World)</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <!-- Displaying subject names with 6 chapters each -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                            <!-- Subject 1 -->
+                            <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                                <h2 class="text-lg font-semibold mb-2">POLITICAL SCIENCE</h2>
+                                <ul>
+                                    <a href="">
+                                        <li>Chapter 1 (Power Sharing)</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Chapter 2 (Federalism)</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Chapter 3 (Gender, Religion and Caste)</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Chapter 4 (Political Parties)</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Chapter 5 (Outcomes of Democracy)</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <!-- Displaying subject names with 6 chapters each -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                                <!-- Subject 1 -->
+                                <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                                    <h2 class="text-lg font-semibold mb-2">GEOGRAPHY</h2>
+                                    <ul>
+                                        <a href="">
+                                            <li>Chapter 1 (Resources and Development)</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Chapter 2 (Forest and Wildlife Resources)</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Chapter 3 (Water Resources)</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Chapter 4 (Agriculture)</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Chapter 5 (Minerals and Energy Resources)</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Chapter 6 (Manufacturing Industries)</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Chapter 7 (Lifelines of National Economy)</li>
+                                        </a>
+                                    </ul>
+                                </div>
+
+                                <!-- Displaying subject names with 6 chapters each -->
+                                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                                    <!-- Subject 1 -->
+                                    <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                                        <h2 class="text-lg font-semibold mb-2">ECONOMICS</h2>
+                                        <ul>
+                                            <a href="">
+                                                <li>Chapter 1 (Development)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 2 (Sectors of the Indian Economy)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 3 (Money and Credit)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 4 (Globalisation and the Indian Economy)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 5 (Consumer Rights)</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+
+                                    <!-- <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                                        800 p-4 rounded-lg shadow-md m-5">
+                                        <h2 class="text-lg font-semibold mb-2">HINDI</h2>
+                                        <ul>
+                                            <a href="">
+                                                <li>Chapter 1 (Motion)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 2 (Force and Laws of Motion)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 3 (Gravitation)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 4 (Work and Energy)</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Chapter 5 (Sound)</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                                        <div class="bg-gray-800 p-4 rounded-lg shadow-md m-5">
+                                            <h2 class="text-lg font-semibold mb-2">ENGLISH</h2>
+                                            <ul>
+                                                <a href="">
+                                                    <li>Chapter 1 (Motion)</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Chapter 2 (Force and Laws of Motion)</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Chapter 3 (Gravitation)</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Chapter 4 (Work and Energy)</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Chapter 5 (Sound)</li>
+                                                </a>
+                                            </ul>
+                                        </div> -->
+
+
+                                    </div>
+
+                                    <!-- Footer -->
+                                    <footer class="bg-gray-800 text-center py-8 mt-10">
+                                        <div class="container mx-auto">
+                                            <div class="mb-4">
+                                                <a href="https://www.facebook.com/ChaurasiyaAbhayPratap/"
+                                                    target="_blank" class="text-white mx-3">Facebook</a>
+                                                <a href="https://www.linkedin.com/in/abhay-pratap-chaurasiya-675986287/"
+                                                    target="_blank" class="text-white mx-3">LinkedIn</a>
+                                                <a href="https://youtube.com/@Abhay_Pratap_Chaurasiya" target="_blank"
+                                                    class="text-white mx-3">YouTube</a>
+                                            </div>
+                                            <p class="text-gray-500" id="Contacts">Contact us at:abhay629725426@gmail.com</p>
+                                            <p class="text-gray-500">&copy; ALPHA CLASSES. All rights reserved.</p>
+                                        </div>
+                                    </footer>
+</body>
+
+</html>
